@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+</head>
+<body>
+    
+    <input type="text" id="disp">
+    <br>
+    <button>C</button>
+    <br><button onclick="DP('7')">7</button><button onclick="DP('8')">8</button><button onclick="DP('9')">9</button><button>-</button>
+    <br><button onclick="DP('4')">4</button><button onclick="DP('5')">5</button><button onclick="DP('6')">6</button><button>+</button>
+    <br><button onclick="DP('1')">1</button><button onclick="DP('2')">2</button><button onclick="DP('3')">3</button><button>/</button>
+    <br><button onclick="DP('0')">0</button><button>=</button><button>.</button><button>X</button>
+
+    <script>
+        function DP(ank){
+            let dtlama = document.getElementById("disp").value
+            document.getElementById("disp").value=dtlama+ank
+        }
+    </script>
+
+</body>
+</html>
